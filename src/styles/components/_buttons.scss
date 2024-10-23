@@ -1,0 +1,25 @@
+
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;//diz ao css ao elemento se ele deve ou nao quebrar a linha.//mesma coisa que o wrap so que invertido.
+    //display flex flex-wrap:wrap faz a quebra da linha caso nao couber no elemento pai
+
+    &--primary{
+        color: white;
+        background-color: purple;
+    }
+
+    @media(max-width:640px ) {
+        display: block;
+        width: 100%;
+    }
+
+    @media(max-width: 1024px){
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,45 @@
+
+
+
+.infos-bar{
+    padding: 16px 24px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;//para que os itens sejam distribuidos nos extremos
+    border-radius: 20px;
+    width: auto;
+
+    &__infos{
+        display: flex;
+        gap: 40px;//distanciar os itens no interior do display flex
+
+        &__item{
+            font-size: 14px;
+            color: black;
+
+            b{
+                color: black;
+                font-size: 18px;
+                display: block; //quebrar a linha, pois a tag b tem por padrao display inline
+            }
+        }
+    }
+
+    @media(max-width: 640px){
+        display: block;
+
+        &__infos{
+            display: block;
+
+            &__item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media(max-width: 1024){
+        &__infos{
+            gap: 16px;
+        }
+    }
+}
