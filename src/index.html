@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Land Page</title>
+    <title>Molly's Bar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
@@ -17,7 +18,7 @@
                 Você esta preparado para comemorar o meu aniversário no melhor Bar da região.
             </p>
             <p class="hero__text">
-                <span>10d 12h 10m 2s</span>
+                <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -74,6 +75,7 @@
             <img class="event__image" src="./images/porcao.png" alt="Porção">
         </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
-<script src="scripts/main.js"></script>
 </html>
